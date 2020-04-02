@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             textViewUpdate.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    isUpdating=true;
+                    isUpdating = true;
                     editTextId.setText(String.valueOf(mahasiswa.getId()));
                     editTextNama.setText(mahasiswa.getNama());
                     editTextAlamat.setText(mahasiswa.getAlamat());
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setTitle("Delete " + mahasiswa.getNama())
-                        .setMessage("Are you sure want to delete it?")
+                            .setMessage("Are you sure want to delete it?")
                             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -198,12 +198,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void refreshMahasiswaList(JSONArray mahasiswa) throws JSONException {
         mahasiswaList.clear();
-        for (int i=0; i<mahasiswa.length(); i++) {
+        for (int i = 0; i < mahasiswa.length(); i++) {
             JSONObject obj = mahasiswa.getJSONObject(i);
             mahasiswaList.add(new Mahasiswa(
-               obj.getInt("id"),
-               obj.getString("nama"),
-               obj.getString("alamat")
+                    obj.getInt("id"),
+                    obj.getString("nama"),
+                    obj.getString("alamat")
             ));
         }
         Log.d(MainActivity.class.getSimpleName(), mahasiswaList.toString());
