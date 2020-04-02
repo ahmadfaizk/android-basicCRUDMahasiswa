@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="8"
+        android:text="Civer Yoshioka"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"  />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textViewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewDelete"
+        android:layout_toLeftOf="@+id/textViewDelete"
+        android:layout_toStartOf="@+id/textViewDelete"
+        android:padding="5dp"
+        android:text="Update"
+        android:textColor="#198C6A" />
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textViewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:text="Delete"
+        android:textColor="#A50A1F" />
+</RelativeLayout>
