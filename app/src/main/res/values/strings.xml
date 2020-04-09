@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CRUD Mahasiswa</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="save">Save</string>
+    <string name="hapus">Hapus</string>
+    <string-array name="arr_media">
+        <item>Kamera</item>
+        <item>Galeri</item>
+    </string-array>
 </resources>
